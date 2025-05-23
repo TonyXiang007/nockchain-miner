@@ -12,7 +12,7 @@ WORKDIR nockchain
 
 RUN sed -i "s|^export MINING_PUBKEY .=.*$|export MINING_PUBKEY ?= 2yxpbfDQmM884oq2xsYEmQN1ubr7CFEqQAomvAsnfAahHbyJwgn4BzyJxFmJrC2kemWfiK9YBXShzJMULkMzq1Hyb6GLp9Mp1P8nqopq4ZCzEBTKNPfKstAwHpZrgYKULV7G|" Makefile
 RUN mv .env_example .env
-RUN sed -i "s|^MINING_PUBKEY=.*$|MINING_PUBKEY=2yxpbfDQmM884oq2xsYEmQN1ubr7CFEqQAomvAsnfAahHbyJwgn4BzyJxFmJrC2kemWfiK9YBXShzJMULkMzq1Hyb6GLp9Mp1P8nqopq4ZCzEBTKNPfKstAwHpZrgYKULV7G|" .env
+RUN sed -i "s|^MINING_PUBKEY=.*$|MINING_PUBKEY=2bNy4obgWt9wxvXRzjvVCkepWnFCefvLbxMectcUarpbWTcc8xB7izXQMRvg8S5m68RVV5HKeK1WgWWqvinzG7RPG8XajcYMQe75CxwLmFvfmTaYE4v8zjeYsEiQ9Dgxj2uR|" .env
 
 RUN make install-hoonc
 RUN make build
